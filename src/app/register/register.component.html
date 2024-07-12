@@ -1,0 +1,30 @@
+<div class="parent">
+    <div class="container">
+        <div class="login-box">
+            <h1>Registrarse</h1>
+            <form action="#" method="POST">
+                <div class="textbox">
+                    <label for="nombre">Nombre y Apellido</label>
+                    <input type="text" id="nombre" name="nombre" [(ngModel)]="RegObj.nombre" placeholder="Nombre Apellido" required>
+                </div>
+                <div class="textbox">
+                    <label for="usuario">Nombre de usuario</label>
+                    <input type="text" id="usuario" name="usuario" [(ngModel)]="RegObj.usuario" placeholder="Usuario" required>
+                </div>
+                <div class="textbox">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" name="email" [(ngModel)]="RegObj.email" placeholder="correo@gmail.com" required>
+                </div>
+                <div class="textbox">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" name="password" [(ngModel)]="RegObj.contrasenia" placeholder="Contraseña" required>
+                </div>
+                <div class="textbox">
+                    <label for="passwordConfi">Confirmacion de Contraseña</label>
+                    <input type="password" id="passwordConfi" name="passwordConfi" [(ngModel)]="RegObj.contraseniaConfi" placeholder="Contraseña" required>
+                </div>
+                <button type="button" (click)="onRegister()" class="btn">Registrarse</button>
+            </form>
+        </div>
+    </div>
+</div>
